@@ -44,7 +44,7 @@ public class SimpleLogin {
         logStep.info("Step 1: Open website (Firefox and Chrome)");
         driver.get("https://auth0custm-auth0customfront-main.acklenavenueclient.com/login");  //this link is variable since it is created for every card. Please keep it updated to show the login page
         driver.manage().window().maximize();
-        String title = driver.getTitle();
+        String title = driver.getTitle();   //
         System.out.println(title);
         Assert.assertEquals(title, "Payments");
        // driver2.get("https://stripe-boi-frontend-main.acklenavenueclient.com/loginAuth0");
